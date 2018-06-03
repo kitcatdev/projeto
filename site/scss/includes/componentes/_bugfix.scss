@@ -1,0 +1,53 @@
+/*
+
+ =========================================================
+ * Bug fix - v1.0.0
+
+ Contém a correção de bugs padrões.
+ =========================================================
+
+ */
+
+
+ //EQUAL HEIGHT FIX
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+//NO GUTTERS
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+//No GUTTER INT
+.no-gutter{
+	padding-right: 0;
+	padding-left: 0;
+}
+.no-gutter-right{
+  padding-right: 0;
+}
+.no-gutter-left{
+  padding-left: 0;
+}
+//NO GUTTER EXT
+.no-gutters{
+	margin-left: 0;
+	margin-right: 0;
+}
+//Responsive image fix
+figure{
+	img{
+		width: 100%;
+	}
+}
